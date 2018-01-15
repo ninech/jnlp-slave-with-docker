@@ -1,0 +1,12 @@
+version: '2.3'
+services:
+  jnlp:
+    build: .
+    environment:
+    - DOCKER_HOST=dind
+    depends_on:
+    - dind
+
+  dind:
+    image: docker:dind
+    privileged: true
