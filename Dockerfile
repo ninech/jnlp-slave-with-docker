@@ -1,9 +1,11 @@
-FROM jenkinsci/jnlp-slave:3.16-1
+FROM jenkinsci/jnlp-slave:3.19-1
 
-ARG DOCKER_VERSION=17.06.2~ce-0~debian
+ARG DOCKER_VERSION=18.03.0~ce-0~debian
 ARG DC_VERSION=1.18.0
 
 USER root
+ENV HOME /root
+RUN mkdir /root/.jenkins
 
 RUN apt-get update && \
     apt-get install -qq -y --no-install-recommends \
