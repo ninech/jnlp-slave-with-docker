@@ -1,3 +1,5 @@
+**Unmaintaned**: We don't use this image anymore and therefore don't maintain it. Feel free to fork it though.
+
 # JNLP Slave with Docker
 
 A JNLP Slave Docker image with docker and docker-compose installed. We use this with the Jenkins ECS plugin to
