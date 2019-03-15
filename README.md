@@ -1,6 +1,4 @@
-**Unmaintaned**: We don't use this image anymore and therefore don't maintain it. Feel free to fork it though.
-
-# JNLP Slave with Docker
+# JNLP Slave with Docker [![Docker Badge]][Docker Hub]
 
 A JNLP Slave Docker image with docker and docker-compose installed. We use this with the Jenkins ECS plugin to
 automatically provision Jenkins slaves which then can use Docker to run their jobs.
@@ -18,3 +16,6 @@ docker run -e DOCKER_HOST=dind ninech/jnlp-slave-with-docker docker ps
 ```
 
 See the [docker-compose.yml](docker-compose.yml) file for reference.
+
+[Docker Badge]: https://badgen.net/docker/pulls/devsisters/jnlp-slave-with-docker?icon=docker&label=pulls
+[Docker Hub]: https://hub.docker.com/r/devsisters/jnlp-slave-with-docker/
